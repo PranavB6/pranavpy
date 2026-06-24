@@ -67,6 +67,23 @@ pranavpy --help            # show all options
 
 The `--name` option is required; running `pranavpy` with no arguments exits with an error.
 
+### Easter egg 🥚
+
+Run it with `--name Pranav` (case-insensitive) and it prints a little ASCII-art banner of the
+creator's name before the greeting:
+
+```bash
+$ pranavpy --name Pranav
+
+        ██████  ██████   █████  ███    ██  █████  ██    ██
+        ██   ██ ██   ██ ██   ██ ████   ██ ██   ██ ██    ██
+        ██████  ██████  ███████ ██ ██  ██ ███████ ██    ██
+        ██      ██   ██ ██   ██ ██  ██ ██ ██   ██  ██  ██
+        ██      ██   ██ ██   ██ ██   ████ ██   ██   ████
+
+Hello Pranav!
+```
+
 ## Development
 
 This repo uses a `makefile` for common tasks:

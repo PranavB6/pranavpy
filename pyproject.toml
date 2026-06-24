@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]          # what to install to build your package
+build-backend = "hatchling.build"
+
+[project]
+name = "pranavpy"
+version = "0.1.0"
+description = "Pranav's CLI Tool"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["typer"]
+
+[project.optional-dependencies]
+dev = ["build", "twine", "pytest", "pytest-cov"]
+
+[project.scripts]
+pranavpy = "pranavpy.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pranavpy"]
